@@ -2,302 +2,388 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering — Amelia Cole</title>
+  <title>Projects — Amelia Cole Engineering</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="favicon.ico">
-  <!-- Open Graph / Link Preview -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ameliacole.netlify.app/projects.html">
-  <meta property="og:title" content="Engineering — Amelia Cole">
-  <meta property="og:description" content="Mechanical engineering projects · CAD, CNC, 3D printing · IMSA '28">
-  <meta property="og:image" content="https://ameliacole.netlify.app/og-preview.jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://ameliacole.netlify.app/og-preview.jpeg">
+
+  <!-- ---------- Inline Additions for Images + Captions ---------- -->
+  <style>
+    .design-step-image {
+      display: flex;
+      justify-content: center;
+      margin: 1.8rem 0 2.4rem;
+    }
+
+    .design-step-image figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .design-step-image img {
+      width: 520px;
+      height: 360px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px;
+      border: 1px solid rgba(0,0,0,0.1);
+      background-color: #f7f7f7;
+      box-shadow:
+        0 10px 22px rgba(0,0,0,0.1),
+        inset 0 0 0 1px rgba(255,255,255,0.45);
+    }
+
+    .design-step-image figcaption {
+      margin-top: 0.6rem;
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    .project.clickable { cursor: pointer; }
+  </style>
 </head>
 <body>
 
+  <!-- ---------- Navigation ---------- -->
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">Amelia Cole <em>&</em></a>
-      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <div class="nav-links">
+      <div class="nav-left">Amelia Cole Engineering</div>
+      <div class="nav-right">
         <a href="index.html">Home</a>
-        <a href="projects.html" class="active">Engineering</a>
-        <a href="writing.html">Writing</a>
         <a href="resume.html">Resume</a>
       </div>
     </div>
   </nav>
 
-  <div class="panel-overlay" id="overlay"></div>
-
+  <!-- ---------- Main Content ---------- -->
   <main>
+    <h1>Projects</h1>
+    <p class="subtitle">
+      <span style="opacity:0.9;">
+        Selected engineering projects emphasizing design, iteration, and reflection.
+      </span>
+    </p>
 
-    <div class="page-header fade-up">
-      <span class="mono">Engineering Work</span>
-      <h1>Projects</h1>
-      <p>A look at what I've designed, how I approached it, and what I learned along the way.</p>
-    </div>
-
-    <div class="projects-stack fade-up">
-
-      <div class="project-row" id="sightBoardProject">
-        <div class="project-row-img">
-          <img src="Sightboardcoverphoto.JPG" alt="Sight Board">
-        </div>
-        <div class="project-row-body">
-          <span class="mono">Freshman · PLTW IED</span>
-          <h3>Sight Board</h3>
-          <p>An assistive device designed for a disabled student who needed a way to communicate with their caregiver. I handled the CAD, material selection, and manufacturing from start to finish, including CNC-cut acrylic and custom 3D-printed handles.</p>
-          <div class="project-tags">
-            <span class="tag">Fusion 360</span>
-            <span class="tag">CNC Machining</span>
-            <span class="tag">3D Printing</span>
-            <span class="tag">Assistive Design</span>
-          </div>
-          <span class="project-cta">See My Process →</span>
-        </div>
+    <!-- ---------- Project Cards ---------- -->
+    <section class="project clickable" id="sightBoardProject">
+      <div class="project-media">
+        <img src="Sightboardcoverphoto.jpg" alt="Sight Board CAD">
       </div>
-
-      <div class="project-row" id="automatonProject">
-        <div class="project-row-img">
-          <img src="AutomatonPrototype2.gif" alt="Mechanical Automaton">
-        </div>
-        <div class="project-row-body">
-          <span class="mono">Freshman · PLTW IED</span>
-          <h3>Mechanical Automaton</h3>
-          <p>A hand-cranked carousel automaton that uses snail and circular cams to produce synchronized rotational and vertical motion. This was my first experience designing a mechanical system with moving parts.</p>
-          <div class="project-tags">
-            <span class="tag">Cam Mechanisms</span>
-            <span class="tag">Fusion 360</span>
-            <span class="tag">Laser Cut</span>
-            <span class="tag">Prototyping</span>
-          </div>
-          <span class="project-cta">See My Process →</span>
-        </div>
+      <div class="project-text">
+        <h2>Sight Board</h2>
+        <div class="project-meta">Freshman year · PLTW: Introduction to Engineering Design</div>
+        <p><strong>Role:</strong> CAD and Manufacturing Head</p>
+        <p><strong>Highlight:</strong> Utilized CNC machine for high-precision acrylic fabrication.</p>
       </div>
+    </section>
 
-      <div class="project-row" style="opacity:0.38; cursor:default; pointer-events:none;">
-        <div class="project-row-img" style="display:flex;align-items:center;justify-content:center;">
-          <span class="mono">Coming Soon</span>
-        </div>
-        <div class="project-row-body">
-          <span class="mono">In Progress</span>
-          <h3>FRC Team 2022 Rebuilt by Haas Robot</h3>
-          <p>Built by Team 2022 to compete in the 2026 Rebuilt by Haas FIRST Robotics Competition</p>
-        </div>
+    <section class="project clickable" id="automatonProject">
+      <div class="project-media">
+        <img src="AutomatonPrototype2.gif" alt="Mechanical Automaton">
       </div>
-
-    </div>
-
-        <div class="footer">
-      <span class="footer-name">Amelia Cole</span>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/amelia-cole-imsa-engineering" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/share/173MSqfL4a/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
+      <div class="project-text">
+        <h2>Mechanical Automaton</h2>
+        <div class="project-meta">Freshman year · PLTW: Introduction to Engineering Design</div>
+        <p><strong>Role:</strong> Mechanical design and CAD</p>
+        <p><strong>Highlight:</strong> Built a hand-cranked automaton with gears and levers.</p>
       </div>
-      <span class="footer-meta">Illinois Math &amp; Science Academy · Class of 2028</span>
-    </div>
+    </section>
 
+    <div class="footer">More projects added as work progresses.</div>
   </main>
 
-  <!-- Sight Board Panel -->
+  <!-- ---------- Sight Board Panel ---------- -->
   <div class="project-panel" id="sightBoardPanel">
     <div class="panel-content">
       <button class="close-panel" data-close>&times;</button>
-      <span class="mono">Freshman · PLTW IED · CAD &amp; Manufacturing</span>
       <h2>Sight Board for Disabled Student</h2>
 
       <h3>Problem</h3>
-      <p>A disabled student needed a tool that would help them interact with visual cues in the classroom. The device had to be easy to use, durable enough for daily use, and simple enough to pick up without much explanation. It also needed to be lightweight and safe, with no sharp edges.</p>
+      <p style="max-width:65ch;">
+        The challenge was to design a practical, durable tool that allowed a disabled student to interact with visual cues effectively.
+        The device needed to be intuitive, repeatable, and adaptable to the classroom environment, while remaining lightweight and safe.
+      </p>
 
       <h3>Role</h3>
-      <p>I was responsible for the CAD modeling, material selection, and manufacturing. This was my first time taking a project from a sketch all the way through to a finished physical object, and it pushed me to think carefully about how design decisions I make in CAD translate to real life.</p>
+      <p style="max-width:65ch;">
+        <strong>Oversaw CAD modeling, material selection, and manufacturing.</strong> 
+        This project introduced me to hands-on fabrication and the iterative nature of translating designs from concept to physical reality.
+        I was responsible for ensuring that the design could be produced reliably and fit within time and resource constraints.
+      </p>
 
       <h3>Design Process</h3>
       <ul class="design-steps">
+        <!-- Client Meeting -->
         <li class="design-step">
           <div class="design-step-header">Client Meeting</div>
           <div class="design-step-content">
             <div class="design-step-image">
               <figure>
-                <img src="IMG_6042.jpg" alt="Initial sketch">
+                <img src="IMG_6042.jpg" alt="Initial sketch of the sight board concept">
                 <figcaption>Hand-drawn sketch guiding the first discussion with the client.</figcaption>
               </figure>
             </div>
-            <p>I started by sitting down with the client to understand what they actually needed. I brought an initial sketch to give us something concrete to react to, which made the conversation a lot more useful. The client was flexible, which gave me some design freedom, but it also meant I had to think ahead about what would actually be practical to build.</p>
+            <p style="max-width:65ch;">
+              I initiated the project by meeting with the client to understand their specific needs and expectations. 
+              Presenting the initial sketch helped clarify the goals and allowed me to collect valuable feedback 
+              about usability and desired features.
+            </p>
+            <p style="max-width:65ch;">
+              The client’s cooperative attitude allowed for flexibility in design, but it also required me to anticipate 
+              practical limitations and make design decisions that balanced ideal functionality with manufacturability.
+            </p>
           </div>
         </li>
+
+        <!-- Defining Criteria and Constraints -->
         <li class="design-step">
-          <div class="design-step-header">Defining Criteria &amp; Constraints</div>
+          <div class="design-step-header">Defining Criteria and Constraints</div>
           <div class="design-step-content">
-            <p><strong>Design requirements:</strong> Clear, sturdy, compact, easy to hold, and no sharp edges.</p>
+            <p><strong>Design Requirements:</strong></p>
+            <p style="margin-left:1rem;">
+              The sight board had to be clear, robust, compact, easy to handle, and free of sharp edges.
+            </p>
             <div class="design-step-image">
               <figure>
-                <img src="Schooldesk.png" alt="Classroom desk">
-                <figcaption>The classroom desk informed sizing and ergonomics.</figcaption>
+                <img src="Schooldesk.png" alt="Example of desk used in the classroom.">
+                <figcaption>Desk used in the classroom informed sizing and ergonomics.</figcaption>
               </figure>
             </div>
-            <p><strong>Constraints:</strong> $40 budget and three 1.5-hour class periods to get it done.</p>
-            <p><strong>Key challenge:</strong> Finding the right acrylic thickness was harder than I expected. It needed to be strong enough to hold up in a classroom setting but light enough to be portable, and it had to work with the CNC machine we had available.</p>
+            <p><strong>Limitations:</strong></p>
+            <p style="margin-left:1rem;">
+              Budget was restricted to $40, and the project had only three 1.5-hour class periods to complete.
+            </p>
+            <p><strong>Challenges:</strong></p>
+            <p style="margin-left:1rem;">
+              Selecting the correct acrylic thickness to balance strength and portability, ensuring components could 
+              be machined accurately, and making the design compatible with available CNC equipment required careful planning.
+            </p>
           </div>
         </li>
+
+        <!-- CAD Modeling -->
         <li class="design-step">
           <div class="design-step-header">CAD Modeling</div>
           <div class="design-step-content">
-            <p>I modeled all the components in Fusion 360. The snap-on handles went through several iterations before I got the fit right, which taught me a lot about tolerances and why small measurement decisions matter more than you would think depending on material choice.</p>
+            <p style="max-width:65ch;">
+              Using Fusion 360, I created detailed 3D models of all components. Iterative adjustments were necessary 
+              for the snap-on handles to ensure a secure fit, teaching me early lessons about tolerance, fit, 
+              and precision in engineering design.
+            </p>
           </div>
         </li>
+
+        <!-- Material Selection -->
         <li class="design-step">
           <div class="design-step-header">Material Selection</div>
           <div class="design-step-content">
-            <table>
-              <thead><tr><th>Component</th><th>Material</th><th>Reason</th></tr></thead>
-              <tbody>
-                <tr><td>Main board</td><td>Acrylic (¼ in.)</td><td>Clarity, rigidity, CNC-compatible</td></tr>
-                <tr><td>Handles</td><td>PLA (3D printed)</td><td>Lightweight, customizable geometry</td></tr>
-              </tbody>
-            </table>
+            <p style="max-width:65ch;">
+              I evaluated acrylic, polycarbonate, and PETG for durability, clarity, and ease of machining. 
+              Acrylic was chosen due to its transparency and machinability, with careful attention to thickness and 
+              CNC settings to prevent melting or chipping. This step introduced me to the impact of material properties 
+              on manufacturing outcomes.
+            </p>
           </div>
         </li>
+
+        <!-- CNC Milling -->
         <li class="design-step">
-          <div class="design-step-header">CNC Fabrication &amp; Final Assembly</div>
+          <div class="design-step-header">CNC Milling</div>
           <div class="design-step-content">
-            <p>The acrylic panel was cut on the CNC router using G-code I generated from Fusion 360's CAM workspace. Getting the feed rate and spindle settings right took some trial and error since acrylic cracks easily if you push it too fast. I ended up having to update the settings because the chips were melting together as the CNC cut the material. The PLA handles needed a few rounds of adjustment before they fit the way I wanted.</p>
+            <div class="design-step-image">
+              <figure>
+                <img src="IMG_7178.jpg" alt="Fully milled acrylic sight board panel">
+                <figcaption>Completed acrylic panel after CNC milling with adjusted spindle speed and feed rate.</figcaption>
+              </figure>
+            </div>
+            <p style="max-width:65ch;">
+              CNC milling was my first hands-on experience with manufacturing. Initially, incorrect spindle and feed settings 
+              caused acrylic to melt onto the cutting tool. Adjusting these parameters allowed me to produce clean, precise panels, 
+              emphasizing the importance of experimentation and careful setup in real-world fabrication.
+            </p>
+          </div>
+        </li>
+
+        <!-- 3D Printing Handles -->
+        <li class="design-step">
+          <div class="design-step-header">3D Printing Handles</div>
+          <div class="design-step-content">
+            <div class="design-step-image">
+              <figure>
+                <img src="IMG_7180.jpg" alt="PLA snap-on handle printed on Prusa MK3">
+                <figcaption>Snap-on handle printed in PLA and fitted to the acrylic panel.</figcaption>
+              </figure>
+            </div>
+            <p style="max-width:65ch;">
+              Printed PLA handles underwent iterative fitting adjustments to ensure secure attachment to the acrylic panel. 
+              This phase reinforced the importance of testing and refining prototypes to achieve functional, user-friendly components.
+            </p>
           </div>
         </li>
       </ul>
 
       <h3>Reflection</h3>
-      <p>This was the first project where I was responsible for the whole thing, not just one piece of it. Going from a sketch on paper to something a real person would use in their day made the design process feel a lot more concrete. </p>
-      <p>It also made me think more carefully about who I was designing for. The device was not for me, so my instincts about what was intuitive or comfortable did not always apply. That was a useful thing to figure out early.</p>
+      <p style="max-width:68ch;">
+        Completing the Sight Board was my first substantial encounter with the engineering design process. 
+        It taught me how theoretical plans are transformed into tangible objects through manufacturing and iterative refinement. 
+        I developed a foundational understanding of how material properties, tolerances, and machine settings interact to influence outcomes.
+      </p>
+      <p style="max-width:68ch;">
+        This project ignited my passion for engineering, showing me that careful design, hands-on experimentation, and thoughtful problem-solving 
+        can turn abstract concepts into functional, meaningful devices. It also prepared me to approach future projects with confidence in both 
+        design and fabrication.
+      </p>
     </div>
   </div>
 
-  <!-- Automaton Panel -->
+  <!-- ---------- Mechanical Automaton Panel ---------- -->
   <div class="project-panel" id="automatonPanel">
     <div class="panel-content">
       <button class="close-panel" data-close>&times;</button>
-      <span class="mono">Freshman · PLTW IED · Mechanical Design</span>
       <h2>Mechanical Automaton</h2>
 
       <h3>Problem</h3>
-      <p>The goal was to design and build a hand-cranked automaton that told a simple story through motion. It had to demonstrate real mechanical principles like cams, rotational motion, and linkages, and the mechanisms needed to be visible so you could actually see how the motion was being produced.</p>
+      <p style="max-width:65ch;">
+        Design and build a hand-cranked mechanical automaton capable of telling a simple story through motion,
+        while demonstrating fundamental mechanical principles such as cams, rotational motion, vertical translation,
+        and mechanical linkages. The automaton needed to clearly expose its internal mechanisms so that motion paths
+        and cause-and-effect relationships could be observed directly.
+      </p>
 
       <h3>Role</h3>
-      <p>I led the mechanical design and CAD modeling. That meant coming up with the concept, figuring out which types of cams to use, modeling everything in Fusion 360, and working through the physical prototypes when things did not move the way I expected.</p>
+      <p style="max-width:65ch;">
+        <strong>Led mechanical design and CAD modeling.</strong>
+        I was responsible for conceptualizing the mechanism, selecting cam types, modeling all moving components in CAD,
+        and iterating through physical prototypes to resolve motion, stability, and friction issues.
+      </p>
 
       <h3>Design Process</h3>
       <ul class="design-steps">
+        <!-- Initial Sketches -->
         <li class="design-step">
           <div class="design-step-header">Initial Sketches</div>
           <div class="design-step-content">
-            <p>I started with hand sketches to figure out how to turn rotation from a hand crank into multiple different motions at once. The story I wanted to tell was about a mother and daughter at a carnival. The carousel is broken, so the horses spin but do not move up and down the way they should. The mother notices her daughter is disappointed, so she lifts her up and down herself to give her the experience the ride was supposed to. Getting that concept on paper helped me work through which cam profiles I needed and how everything could share one axle without interfering with each other.</p>
+            <p style="max-width:65ch;">
+              I began with hand sketches to explore how rotational motion from a hand crank could be converted into
+              multiple, distinct motions. The goal was to create a narrative moment: a carousel that spins while its
+              riders move up and down, echoing a parent lifting a child to mimic a broken carnival ride.
+              These sketches helped me reason through cam profiles, follower motion, and how multiple mechanisms
+              could coexist on a single axle without interference.
+            </p>
           </div>
         </li>
+
+        <!-- CAD Design -->
         <li class="design-step">
           <div class="design-step-header">CAD Design</div>
           <div class="design-step-content">
-            <p>Once I had a layout I felt good about, I moved into Fusion 360. This was my first time modeling a system where the parts actually interact with each other rather than just sitting still. I designed two cams on a shared axle: a snail cam to drive the vertical motion for the figures, and a circular cam to transfer rotation to the carousel. A lot of the work here was making sure there was enough clearance between parts and that the motion paths would actually work once everything was built.</p>
+            <p style="max-width:65ch;">
+              After settling on a general layout, I transitioned the design into Fusion 360.
+              This was my first experience modeling a system with interacting mechanical components rather than
+              static parts. I designed two cams mounted on a shared axle: a snail cam to generate vertical motion
+              for the figures, and a circular cam used to transfer rotational motion to a secondary cam connected
+              to the carousel. Iterations focused on alignment, clearance between moving parts, and ensuring
+              that motion paths were mechanically feasible.
+            </p>
           </div>
         </li>
+
+        <!-- Prototyping & Testing -->
         <li class="design-step">
-          <div class="design-step-header">Prototyping &amp; Testing</div>
+          <div class="design-step-header">Prototyping & Testing</div>
           <div class="design-step-content">
             <div class="design-step-image">
               <figure>
-                <img src="AutomatonPrototype1.gif" alt="Cardboard prototype">
-                <figcaption>Cardboard prototype used to evaluate motion, stability, and scale.</figcaption>
+                <img src="AutomatonPrototype1.gif" alt="Initial automaton prototype motion">
+                <figcaption>Cardboard and early component prototype used to evaluate motion, stability, and scale.</figcaption>
               </figure>
             </div>
-            <p>Before committing to final materials, I built a cardboard version to test the scale and motion. It immediately showed me that the vertical axle for the carousel was too tall, which made the whole structure tilt when it rotated. I shortened the axle and made the enclosure wider to fix it. That cardboard prototype saved me from making the same mistake in wood and PLA.</p>
+            <p style="max-width:65ch;">
+              Before committing to final materials, I built a physical prototype using cardboard to test scale
+              and motion behavior. This prototype immediately revealed instability in the carousel’s vertical axle,
+              which was too tall and caused the structure to tilt during rotation. In response, I shortened the axle
+              and expanded the surrounding enclosure, improving both mechanical stability and visibility of the cams.
+              This stage reinforced the importance of testing mechanisms physically rather than relying on CAD alone.
+            </p>
           </div>
         </li>
+
+        <!-- Final Assembly -->
         <li class="design-step">
           <div class="design-step-header">Final Assembly</div>
           <div class="design-step-content">
             <div class="design-step-image">
               <figure>
-                <img src="AutomatonPrototype2.gif" alt="Completed automaton">
+                <img src="AutomatonPrototype2.gif" alt="Initial automaton prototype motion">
                 <figcaption>Completed automaton demonstrating synchronized rotational and vertical motion.</figcaption>
               </figure>
             </div>
-            <p>The final version used 3D-printed cams, bushings, and a hand crank, wooden dowels for the axles, and a laser-cut wooden enclosure. During testing, the cams were not generating enough friction to spin the carousel consistently. I fixed it by wrapping a rubber band around the horizontal cam, which gave it enough grip to transfer the motion reliably. It was not the most elegant solution, but it worked.</p>
+            <p style="max-width:65ch;">
+              The final automaton used 3D printed cams, bushings, and a hand crank, wooden dowels for axles,
+              and a laser-cut wooden enclosure. During testing, insufficient friction between the interacting
+              cams prevented reliable rotation of the carousel. This was resolved by adding a rubber band
+              around the horizontal cam to increase friction, enabling consistent motion transfer.
+              Final testing focused on smooth operation, visibility of mechanisms, and narrative clarity.
+            </p>
           </div>
         </li>
       </ul>
 
       <h3>Reflection</h3>
-      <p>The friction problem with the cams was frustrating at the time, but looking back it was one of the more useful things that happened. It taught me that problems showing up late in a build are not failures in the design process, they are just part of it. The rubber band fix was unglamorous, but figuring out why it worked helped me understand the mechanics better than if everything had gone smoothly from the start.</p>
+      <p style="max-width:68ch;">
+        This project marked my first true introduction to mechanical engineering.
+        While the automaton itself was mechanically simple, it fundamentally changed how I understood motion,
+        design, and problem-solving. Designing cams and linkages transformed abstract physics concepts into
+        tangible cause-and-effect systems that I could see, hear, and feel.
+      </p>
+      <p style="max-width:68ch;">
+        More importantly, this project taught me that engineering is an iterative process driven by failure,
+        observation, and refinement. Issues with friction, stability, and alignment were not setbacks but entry
+        points into deeper understanding. Alongside the Sight Board project, this automaton sparked my interest
+        in engineering by showing me how thoughtful design can turn simple components into meaningful,
+        expressive systems.
+      </p>
     </div>
   </div>
 
+  <!-- ---------- Scripts ---------- -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const overlay = document.getElementById('overlay');
+    document.addEventListener("DOMContentLoaded", () => {
       const projects = [
-        { cardId: 'sightBoardProject', panelId: 'sightBoardPanel' },
-        { cardId: 'automatonProject',  panelId: 'automatonPanel'  }
+        { cardId: "sightBoardProject", panelId: "sightBoardPanel" },
+        { cardId: "automatonProject", panelId: "automatonPanel" }
       ];
 
-      function openPanel(p)  { p.classList.add('open');    overlay.classList.add('active');    document.body.style.overflow = 'hidden'; }
-      function closePanel(p) { p.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow = ''; }
+      // Click card to open panel
+      projects.forEach(p => {
+        const card = document.getElementById(p.cardId);
+        const panel = document.getElementById(p.panelId);
+        const closeBtn = panel?.querySelector('[data-close]');
+        if (!card || !panel || !closeBtn) return;
 
-      projects.forEach(({ cardId, panelId }) => {
-        const card = document.getElementById(cardId);
-        const panel = document.getElementById(panelId);
-        const btn = panel?.querySelector('[data-close]');
-        if (!card || !panel || !btn) return;
-        card.addEventListener('click', () => openPanel(panel));
-        btn.addEventListener('click',  () => closePanel(panel));
+        card.addEventListener("click", () => panel.classList.add("open"));
+        closeBtn.addEventListener("click", () => panel.classList.remove("open"));
       });
 
-      overlay.addEventListener('click', () =>
-        document.querySelectorAll('.project-panel.open').forEach(p => closePanel(p)));
-
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape')
-          document.querySelectorAll('.project-panel.open').forEach(p => closePanel(p));
+      // Click design step headers to toggle
+      document.querySelectorAll('.design-step-header').forEach(header => {
+        header.addEventListener('click', () => {
+          header.parentElement.classList.toggle('open');
+        });
       });
 
-      document.querySelectorAll('.design-step-header').forEach(h =>
-        h.addEventListener('click', () => h.parentElement.classList.toggle('open')));
-
-      // Open panel if ?panel=panelId is in the URL (set by index.html anchor links)
-      const params = new URLSearchParams(window.location.search);
-      const panelId = params.get('panel');
-      if (panelId) {
-        const panel = document.getElementById(panelId);
-        if (panel) setTimeout(() => openPanel(panel), 300);
+      // Auto-open modal if URL has hash (from index.html)
+      const hash = window.location.hash.slice(1); // remove #
+      if (hash) {
+        const project = projects.find(p => p.cardId === hash || p.panelId === hash);
+        if (project) {
+          const panel = document.getElementById(project.panelId);
+          panel?.classList.add("open");
+          panel?.scrollIntoView({ behavior: "smooth" });
+        }
       }
     });
   </script>
 
-  <script>
-    (function(){
-      var btn = document.getElementById("navHamburger");
-      var links = document.querySelector(".nav-links");
-      if (!btn || !links) return;
-      btn.addEventListener("click", function(){
-        var open = links.classList.toggle("open");
-        btn.classList.toggle("open", open);
-        btn.setAttribute("aria-expanded", String(open));
-      });
-      links.querySelectorAll("a").forEach(function(a){
-        a.addEventListener("click", function(){
-          links.classList.remove("open");
-          btn.classList.remove("open");
-          btn.setAttribute("aria-expanded", "false");
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

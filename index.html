@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amelia Cole</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.ico">
+  <!-- Open Graph / Link Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ameliacole.netlify.app/index.html">
+  <meta property="og:title" content="Amelia Cole">
+  <meta property="og:description" content="Mechanical Engineer & Journalist · IMSA '28">
+  <meta property="og:image" content="https://ameliacole.netlify.app/og-preview.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ameliacole.netlify.app/og-preview.jpeg">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Amelia Cole <em>&</em></a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Engineering</a>
+        <a href="writing.html">Writing</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-eyebrow fade-up d1">
+          <span class="dot"></span>
+          <span class="mono">Mechanical Engineering · Journalism · IMSA '28</span>
+        </div>
+        <h1 class="fade-up d2">Amelia Cole</h1>
+        <p class="hero-bio fade-up d3">
+          I'm a sophomore at the Illinois Mathematics and Science Academy with a focus on
+          mechanical engineering. I'm particularly interested in systems, mechanism design, and CAD/CAM. I also report on science and technology
+          for the Acronym, IMSA's student newspaper. Writing is not a separate pursuit from
+          engineering for me. Being able to communicate clearly both verbally and through writing is part of doing the work well,
+          and it's a skill I think matters in every area of life.
+        </p>
+        <div class="hero-ctas fade-up d4">
+          <a href="projects.html" class="btn btn-slate">Engineering Work →</a>
+          <a href="writing.html" class="btn btn-ghost">Read My Writing</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap fade-up d3">
+        <img src="mephoto.jpeg" alt="Amelia Cole" class="profile-photo">
+      </div>
+    </div>
+
+    <!-- Ribbon -->
+    <div class="ribbon fade-up">
+      <div class="ribbon-item">
+        <span class="ribbon-num">IMSA</span>
+        <span class="ribbon-label">Class of 2028</span>
+      </div>
+      <div class="ribbon-item">
+        <span class="ribbon-num">160+</span>
+        <span class="ribbon-label">Volunteer Hours</span>
+      </div>
+      <div class="ribbon-item">
+        <span class="ribbon-num">4.0</span>
+        <span class="ribbon-label">Unweighted GPA</span>
+      </div>
+      <div class="ribbon-item">
+        <span class="ribbon-num">6</span>
+        <span class="ribbon-label">Published Articles</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="section-label fade-up">
+      <span class="mono">About</span>
+    </div>
+
+    <div class="about-split fade-up">
+      <div class="about-pane">
+        <span class="mono">Who I am</span>
+        <h3>Engineer & Journalist</h3>
+        <p>
+          My main focus is mechanical engineering. I'm drawn to how things move and how
+          mechanical systems come together, and that's what I want to build a career around.
+        </p>
+        <p>
+          Writing is something I take seriously alongside that. I report for the Acronym
+          because I think the ability to communicate well is not optional for engineers or
+          any other career. It's how ideas actually reach people.
+        </p>
+      </div>
+      <div class="about-pane">
+        <span class="mono">Involvement</span>
+        <h3>Activities</h3>
+        <ul class="about-list">
+          <li>FIRST Robotics — CAD, Outreach, and Mechanical</li>
+          <li>Society of Engineers — Projects and Events Team</li>
+          <li>Society of Women Engineers — Outreach Lead</li>
+          <li>Student Ambassador — Tour Guide</li>
+          <li>STEMbassadors — Volunteer and Curriculum Board</li>
+          <li>School Newspaper — News Staff Writer</li>
+		  <li>The Sex Ed Initiative — Social Media Head</li>
+		  <li>Tennis — Varsity Player</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Featured Engineering -->
+    <div class="section-label fade-up">
+      <span class="mono">Engineering</span>
+    </div>
+
+    <div class="projects-stack fade-up">
+      <a href="projects.html?panel=sightBoardPanel" class="project-row" id="sightBoardHome">
+        <div class="project-row-img">
+          <img src="Sightboardcoverphoto.jpg" alt="Sight Board">
+        </div>
+        <div class="project-row-body">
+          <span class="mono">Freshman · PLTW IED</span>
+          <h3>Sight Board</h3>
+          <p>An assistive device for a disabled student — CNC-cut acrylic with 3D-printed handles, designed end-to-end in Fusion 360.</p>
+          <div class="project-tags">
+            <span class="tag">CAD</span>
+            <span class="tag">CNC</span>
+            <span class="tag">3D Print</span>
+            <span class="tag">Assistive Design</span>
+          </div>
+          <span class="project-cta">See My Process →</span>
+        </div>
+      </a>
+
+      <a href="projects.html?panel=automatonPanel" class="project-row" id="automatonHome">
+        <div class="project-row-img">
+          <img src="AutomatonPrototype2.gif" alt="Mechanical Automaton">
+        </div>
+        <div class="project-row-body">
+          <span class="mono">Freshman · PLTW IED</span>
+          <h3>Mechanical Automaton</h3>
+          <p>A hand-cranked carousel automaton using cam mechanisms to convert rotation into synchronized storytelling motion.</p>
+          <div class="project-tags">
+            <span class="tag">Mechanisms</span>
+            <span class="tag">Fusion 360</span>
+            <span class="tag">Laser Cut</span>
+          </div>
+          <span class="project-cta">See My Process →</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Featured Writing -->
+    <div class="section-label fade-up">
+      <span class="mono">Writing</span>
+    </div>
+
+    <div class="writing-grid fade-up">
+
+      <a class="article-card" href="https://sites.imsa.edu/acronym/2026/03/04/apptronik-reaches-5b-as-humanoid-race-accelerates/" data-cat="science" target="_blank" rel="noopener">
+        <div class="article-img-wrap">
+          <img class="article-img" src="Apptronik5BArticleCover.jpg" alt="Apptronik's Humanoid Robot Working in a Kitchen">
+          <!-- If you don't have a photo delete the IMG above and uncomment this snippet:
+          <div class="article-img-placeholder"><span>Science &amp; Tech</span></div>
+          -->
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">Science &amp; Tech</span>
+            <span class="article-date">March 2026</span>
+          </div>
+          <h3>Apptronik Reaches $5B as Humanoid Race Accelerates</h3>
+          <p class="article-desc">Apptronik, one of the industry leaders in AI humanoid robotics, has just reached a valuation of approximately $5 billion following recent funding announcements. The number…</p>
+          <span class="article-read">Read on The Acronym <span class="article-read-arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 2 -->
+      <a class="article-card" href="https://sites.imsa.edu/acronym/2026/03/04/amazons-mass-layoffs-signal-a-strategic-shift/" data-cat="news" target="_blank" rel="noopener">
+        <div class="article-img-wrap">
+          <img class="article-img" src="AmazonMassLayoffsArticleCover.png" alt="Amazon Go Storefront">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">News</span>
+            <span class="article-date">March 2026</span>
+          </div>
+          <h3>Amazon's Mass Layoffs Signal a Strategic Shift</h3>
+          <p class="article-desc">On January 28, Amazon laid off over 16,000 employees, following the 14,000 announced last October. These 30,000 layoffs reflect a broader corporate trend: reducing management…</p>
+          <span class="article-read">Read on The Acronym <span class="article-read-arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 3 -->
+      <a class="article-card" href="https://sites.imsa.edu/acronym/2025/11/14/warner-bros-discovery-sale-speculation-puts-ceo-paycheck-back-in-spotlight/" data-cat="news" target="_blank" rel="noopener">
+        <div class="article-img-wrap">
+          <img class="article-img" src="WarnerBrosArticleCover.png" alt="The iconic water tower at the Warner Bros. Studio Lot in Burbank, California">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="article-cat">News</span>
+            <span class="article-date">November 2025</span>
+          </div>
+          <h3>Warner Bros Discovery Sale Speculation Puts CEO Paycheck Back in Spotlight</h3>
+          <p class="article-desc">Although Warner Bros Discovery (WBD) shareholders voted against his $52 million pay package this June, it looks as if CEO David Zaslav may still be…</p>
+          <span class="article-read">Read on The Acronym <span class="article-read-arrow">→</span></span>
+        </div>
+      </a>
+
+      <!-- See all -->
+      <a class="article-card-more" href="writing.html">
+        <span class="mono">All Articles</span>
+        <h3>See everything →</h3>
+      </a>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-strip fade-up">
+      <div>
+        <h3>Let's connect.</h3>
+      </div>
+      <a href="https://mail.google.com/mail/?view=cm&to=ameliacole.writing@gmail.com"
+         target="_blank" class="btn btn-ghost">
+        ameliacole.writing@gmail.com →
+      </a>
+    </div>
+
+        <div class="footer">
+      <span class="footer-name">Amelia Cole</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/amelia-cole-imsa-engineering" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/173MSqfL4a/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+      <span class="footer-meta">Illinois Math &amp; Science Academy · Class of 2028</span>
+    </div>
+
+  </main>
+
+  <script>
+    (function(){
+      var btn = document.getElementById("navHamburger");
+      var links = document.querySelector(".nav-links");
+      if (!btn || !links) return;
+      btn.addEventListener("click", function(){
+        var open = links.classList.toggle("open");
+        btn.classList.toggle("open", open);
+        btn.setAttribute("aria-expanded", String(open));
+      });
+      links.querySelectorAll("a").forEach(function(a){
+        a.addEventListener("click", function(){
+          links.classList.remove("open");
+          btn.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
